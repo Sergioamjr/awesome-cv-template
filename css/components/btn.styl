@@ -1,0 +1,67 @@
+a, button {
+	cursor: pointer;
+}
+
+.btn {
+	color: color_theme;
+	display: inline-block;
+	position: relative;
+	border: 0;
+	/*padding: 10px 0;*/
+	&-small {
+		padding: 5px;
+	}
+	&-theme {
+		background: color_theme;
+		color: #fff;
+		padding: 10px;
+	}
+	&-theme-invert {
+		color: color_theme;
+		background: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&-radius {
+		borderRadius(3px);
+	}
+	&-shadow {
+		box-shadow: 4px 4px color_theme_dark;
+	}
+	&-block {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	&-circle {
+		borderRadius(50%);
+	}
+	&-dark {
+		background: #454545;
+	}
+	&-pink {
+		background: #ff7777;
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+	&-icon {
+		font-size: 0;
+		mx-size(30px);
+		text-align: center;
+		display: block;
+		&:before {
+			display: block;
+			position: absolute;
+			font-family: FontAwesome
+  			content: "\f09a";
+  			font-size: 20px;
+		    top: 5px;
+		    left: 0;
+		    right: 0;
+		}
+		&.icon-facebook {
+			content: "\f09a";
+		}
+	}
+}

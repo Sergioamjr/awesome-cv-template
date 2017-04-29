@@ -1,0 +1,134 @@
+/* Hamburger */
+header {
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+		background-color: #fff;
+	}
+}
+
+
+/* default */
+header {
+	background #5f5f5f;
+	/*position: fixed;*/
+	width: 100%;
+	padding: 10px 0;
+	z-index: 99;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		align-items: center;
+	}
+	.logo {
+		position: absolute;
+		top: 5px;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+	.nav {
+		width: 100%;
+		.hamburger {
+			float: right;
+			padding-right: 0;
+		}
+		nav {
+			text-align: right;
+		}
+		&-list {
+			width: 100%;
+			li {
+				position: relative;
+				line-height: 35px;
+				a {
+					text-transform: uppercase;
+					font-size: 13px;
+					font-weight: 500;
+					color: #fff;
+					cursor: pointer;
+					padding: 10px;
+				}
+				&:hover {
+					background: color_theme_dark;
+				}
+			}
+		}
+		&-submenu {
+			display: none;
+			background-color: color_theme_dark;
+			border-bottom: 4px solid color_theme;
+			border-top: 1px solid #ccc
+			li {
+				display: block;
+				border-bottom: 1px solid #ccc
+				&:hover {
+					background: transparent;
+				}
+				a {
+					display: block;
+					text-transform: capitalize;
+					padding: 0 10px;
+					position: relative;
+					left: 0;
+					transition: all 0.3s ease;
+					&:hover {
+						left: 10px;
+					}
+				}
+			}
+		}
+		&-haschild {
+			&:hover {
+				border-radius: 0;
+				.nav-submenu {
+					display: block;
+				}
+			}
+		}
+	}
+	.hamburger {
+		padding: 0;
+	}
+
+	.nav-content {
+		display: none;
+	}
+}
+
+@media screen and (min-width: sm) {
+	header {
+		height: 70px;
+		.container {
+			align-items: center;
+			.logo {
+				position: relative;
+				top: 0px;
+			}
+		}
+		.nav {
+			width: auto;
+			nav {
+				text-align: left;
+			}
+			.hamburger {
+				display: none;
+			}
+			&-list {
+				li {
+					display: inline-block;
+				}
+			}
+			&-submenu {
+				width: 220px;
+				position: absolute;
+				li {
+					display: block;
+				}
+			}
+		}
+		.nav-content {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-sergio-junior",
+  "version": "1.0.0",
+  "description": "Em Construção",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sergiojunior",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-stylus": "^2.6.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioJrDev/porftolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "front",
+    "end"
+  ],
+  "bugs": {
+    "url": "https://github.com/SergioJrDev/porftolio/issues"
+  },
+  "homepage": "https://github.com/SergioJrDev/porftolio#readme"
+}

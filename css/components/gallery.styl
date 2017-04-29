@@ -1,0 +1,27 @@
+
+.gallery {
+	/*padding-bottom: 50px;*/
+	&-item {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 40px;
+		position: relative;
+	}
+	&-data {
+	    position: absolute;
+	    bottom: 0;
+	    background: color_theme;
+	    padding: 2px 10px;
+	    color: #fff;
+	    border-radius: 0 5px 0 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/*Gallery*/
+	.gallery {
+		&-item {
+			height: 260px;
+		}
+	}
+}

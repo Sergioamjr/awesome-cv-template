@@ -1,0 +1,79 @@
+borderRadius(x) {
+	border-radius: x;
+}
+
+mx-size(x) {
+	width: x;
+	height: x;
+}
+
+mx-opacity(x) {
+	opacity: x;
+}
+
+pseudoElemnt(pos, w, h) {
+	content: '';
+	position: pos;
+	top: 0;
+	right: 0;
+	display: block;
+    width: w;
+    height: h;
+}
+
+bg-rgba(x) {
+	background: x;
+}
+
+bg-image(size, pos, img) {
+	background-size: size;
+	background-image: url(img);
+	background-position: pos;
+}
+
+flexbetween() {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+flexdefault() {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+/* Grids */
+xs-grid(x) {
+	for n in (1..x) {
+		.xs-{n}-{x} {
+			width ((0% + n / x * 100));
+		}
+	}
+}
+
+sm-grid(x) {
+	for n in (1..x) {
+		.sm-{n}-{x} {
+			padding: 0 15px;
+			width ((0% + n / x * 100));
+		}
+	}
+}
+
+md-grid(x) {
+	for n in (1..x) {
+		.md-{n}-{x} {
+			padding: 0 15px;
+			width ((0% + n / x * 100));
+		}
+	}
+}
+
+lg-grid(x) {
+	for n in (1..x) {
+		.lg-{n}-{x} {
+			padding: 0 15px;
+			width ((0% + n / x * 100));
+		}
+	}
+}

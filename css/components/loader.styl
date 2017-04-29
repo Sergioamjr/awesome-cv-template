@@ -1,0 +1,183 @@
+
+.loader {
+/*     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid color_theme;
+    margin: auto; */
+   
+    &-spin {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        border: 4px solid color_theme;
+        margin: auto;
+        animation: rotate 1.2s linear infinite;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 6px;
+            height: 2px;
+            background: #fff;
+            top: -3px;
+            right: 0;
+            left: 0;
+            border-bottom: 1px solid color_theme;
+            margin: auto;
+            border-radius: 3px 3px 0px 0px;
+            animation: size 1s cubic-bezier(0.62, 0.39, 0.47, 1.04) infinite alternate
+        }
+    }
+    &-lines {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        border: 2px solid #d8d8d8;
+        margin: auto;
+        animation: rotate 1.2s ease-in-out infinite;
+        border-style: solid;
+        border-top-width: 2px;
+        border-top-color: color_theme;
+        &:after {
+            content: '';
+            background: white;
+            width: 13px;
+            height: 13px;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+            animation: rotate 1.2s ease-in-out infinite;
+            top: 0;
+            bottom: 0;
+            border: 2px solid #ccc;
+            border-top-width: 2px;
+            border-top-color: color_theme;
+        }
+        &:before {
+            content: '';
+            background: white;
+            width: 5px;
+            height: 5px;
+            display: block;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+             animation: rotate 1.1s ease-in-out infinite;
+            top: 0;
+            bottom: 0;
+            border: 2px solid #ccc;
+            border-top-width: 2px;
+            border-top-color: color_theme;
+        }
+    }
+    &-bars {
+        width: 3px;
+        background-color: color_theme;
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        animation: bars_size 0.5s ease infinite alternate;
+        &:after,
+        &:before {
+            content: '';
+            width: 3px;
+            background-color: color_theme;
+            border: 0;
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            animation: bars_size 0.5s ease infinite alternate; 
+            animation-delay: 0.1s;
+        }
+        &:before {
+            left: 10px;
+            animation-delay: 0.2s;
+        }
+    }
+
+    &-bars-centered {
+        width: 3px;
+        background-color: color_theme;
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        animation: bars_size 0.3s ease infinite alternate;
+        &:after,
+        &:before {
+            content: '';
+            width: 3px;
+            background-color: color_theme;
+            border: 0;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            top: 0;
+            left: 5px;
+            animation: bars_size 0.3s ease infinite alternate; 
+            animation-delay: 0.1s;
+        }
+        &:before {
+            left: 10px;
+            animation-delay: 0.2s;
+        }
+    }
+}
+
+td {
+    padding: 10px 5px;
+}
+
+.message-doacao {
+    text-align: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes size {
+    0% {
+        width: 6px;
+    }
+
+    100% {
+        width: 10px;
+    }
+}
+
+@keyframes bars_size {
+    0% {
+        height: 5px;
+    }
+    100% {
+        height: 20px;
+    }
+}
