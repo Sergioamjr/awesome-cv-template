@@ -5,19 +5,7 @@
 	font-weight: lighter;
 }
 
-.intro {
-	padding-top: 0 !important;
-	background: #303030;
-	* {
-		color: #f1f1f1;
-	}
-	h2 {
-		font-size: 70px;
-	}
-	p {
-		text-transform: uppercase;
-	}
-}
+
 
 .skills {
     display: flex;
@@ -29,7 +17,7 @@
 		margin-bottom: 4px;
 	}
 	&-box {
-		width: 100%; 
+		width: 50%; 
 		text-align: center;
 		margin-bottom: 10px;
 		@media (min-width: sm) {
@@ -95,45 +83,7 @@ svg .text {
 	padding-top: 100px;
 }
 
-.about {
-	/*background: var(--color_two);*/
-}
 
-.education {
-	background: var(--color_one);
-	* {
-		color: #fff;
-	}
-}
-
-.work {
-	background: var(--color_four);
-	* {
-		color: #fff;
-	}
-}
-
-.social-contact {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    li {
-    	display: inline-block;
-    	margin: 0 10px;
-    	a {
-    		font-size: 0;
-    		.fa {
-    			font-size: 20px;	
-    			transition: all .1s ease;		
-    		}
-    		&:hover {
-    			.fa {
-    				font-size: 26px;
-    			}
-    		}
-    	}
-    }
-}
 
 .box {
 	padding-bottom: 40px;
@@ -285,6 +235,7 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
 	.content {
 		margin-top: 90px;
 		background: #fff;
+		border-radius: 5px;
 		padding: 15px 40px;
 		.title {
 			margin-bottom: 10px;
@@ -331,6 +282,15 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
 	border: 5px solid #fff;
 }
 
+.profile {
+	.name {
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.job {
+		font-size: 25px;
+	}
+}
 
 .radius {
 	border-radius: 50%;
