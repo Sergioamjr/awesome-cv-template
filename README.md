@@ -36,8 +36,8 @@ Meu currículo pessoal. Se sinta a vontade para editar e usar. Utilize o arquivo
 <div class="skills-box">
     <h2>Nome da habilidade</h2>
     <svg width="100" heigth="100" viewBox="0 0 100 100">
-        <!-- Troque *****alguma_tecnologia***** por uma nova classe, ela é necessária para calcular a porcentagem. -->
-        <circle class="*****alguma_tecnologia*****" r="40" cx="50" cy="50" fill="transparent" stroke="#333" stroke-width="8"/>
+        <!-- Troque IDENTIFICAÇÃO_DO_ELEMENTO por uma nova classe, ela é necessária para calcular a porcentagem. -->
+        <circle class="IDENTIFICAÇÃO_DO_ELEMENTO" r="40" cx="50" cy="50" fill="transparent" stroke="#333" stroke-width="8"/>
         <text class="text" x="24" y="57" fill="#333">XX %</text>
     </svg>
 </div>
@@ -55,7 +55,7 @@ E logo a baixo no mesmo arquivo, editar a classe do elemento SVG.
 
 ```css
 //Utilize a mesma classe que você definiu no novo elemento.
-svg .*****alguma_tecnologia***** {
+svg .IDENTIFICAÇÃO_DO_ELEMENTO {
 	stroke-dasharray: calc(251px * var(--ALGUMA-TECNOLOGIA-VAR) / 100);
 }
 ```
