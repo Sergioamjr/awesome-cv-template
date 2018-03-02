@@ -1,6 +1,9 @@
 # Portfólio Pessoal
 
-Estrutura da sessão Educação, Atividades Complementares e Experiência Profissional.
+Meu currículo pessoal. Se sinta a vontade para editar e usar. Utilize o arquivo `modelo.html` para editar suas informações, ele já está limpo e com a estrutura para você editar, mas para você entender, essas são as estruturas das sessões.
+
+### Educação, Atividades Complementares e Experiência Profissional.
+
 
 ```html
 <div class="simple-box">
@@ -10,7 +13,25 @@ Estrutura da sessão Educação, Atividades Complementares e Experiência Profis
 </div>
 ```
 
-Estrutura da sessão de Habilidades
+### Portfólio e Projetos.
+```html
+<div class="project">
+    <div class="project-item">
+        <h2 class="project-name">Nome do projeto</h2>
+        <span>Feito em</span>
+        <ul class="project-list">
+            <li>Lista</li>
+            <li>de</li>
+            <li>técnologias</li>
+            <li>útilizadas</li>
+        </ul>
+        <a target="_blank" href="LINK_DO_PROJETO">LINK_DO_PROJETO</a>
+        <p>Descrição do projeto</p>
+    </div>
+</div>
+```
+
+### Habilidades
 ```html
 <div class="skills-box">
     <h2>Nome da habilidade</h2>
@@ -38,23 +59,5 @@ svg .alguma_tecnologia {
 }
 ```
 
-## Atenção
+#### Atenção
 Após alterar o CSS, rode o comando `gulp` no projeto para atualizar o arquivo css final.
-
-Estrutura da sessão de Portfólio e Projetos.
-```html
-<div class="project">
-    <div class="project-item">
-        <h2 class="project-name">Nome do projeto</h2>
-        <span>Feito em</span>
-        <ul class="project-list">
-            <li>Lista</li>
-            <li>de</li>
-            <li>técnologias</li>
-            <li>útilizadas</li>
-        </ul>
-        <a target="_blank" href="LINK_DO_PROJETO">LINK_DO_PROJETO</a>
-        <p>Descrição do projeto</p>
-    </div>
-</div>
-```
