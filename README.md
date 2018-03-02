@@ -15,13 +15,14 @@ Estrutura da sessão de Habilidades
 <div class="skills-box">
     <h2>Nome da habilidade</h2>
     <svg width="100" heigth="100" viewBox="0 0 100 100">
+        <!-- Troque *****alguma_tecnologia***** por uma nova classe, ela é necessária para calcular a porcentagem. -->
         <circle class="*****alguma_tecnologia*****" r="40" cx="50" cy="50" fill="transparent" stroke="#333" stroke-width="8"/>
-        <text class="text" x="24" y="57" fill="#333">Porcentagem de conhecimento</text>
+        <text class="text" x="24" y="57" fill="#333">XX %</text>
     </svg>
 </div>
 ```
 
-Para mostrar a porcentagem corretamente, basta é no arquivo `css/components/_vars.styl` e editar os valores ou adicionar algum outro.
+Para mostrar a porcentagem corretamente, basta ir no arquivo `css/components/_vars.styl` e editar os valores ou adicionar algum outro.
 
 ```css
 :root {
@@ -29,7 +30,7 @@ Para mostrar a porcentagem corretamente, basta é no arquivo `css/components/_va
 }
 ```
 
-E logo a baixo editar a classe do elemento SVG.
+E logo a baixo no mesmo arquivo, editar a classe do elemento SVG.
 
 ```css
 svg .alguma_tecnologia {
@@ -37,21 +38,23 @@ svg .alguma_tecnologia {
 }
 ```
 
+## Atenção
+Após alterar o CSS, rode o comando `gulp` no projeto para atualizar o arquivo css final.
 
 Estrutura da sessão de Portfólio e Projetos.
 ```html
-    <div class="project">
-        <div class="project-item">
-            <h2 class="project-name">Nome do projeto</h2>
-            <span>Feito em</span>
-            <ul class="project-list">
-                <li>Lista</li>
-                <li>de</li>
-                <li>técnologias</li>
-                <li>útilizadas</li>
-            </ul>
-            <a target="_blank" href="LINK_DO_PROJETO">LINK_DO_PROJETO</a>
-            <p>Descrição do projeto</p>
-        </div>
+<div class="project">
+    <div class="project-item">
+        <h2 class="project-name">Nome do projeto</h2>
+        <span>Feito em</span>
+        <ul class="project-list">
+            <li>Lista</li>
+            <li>de</li>
+            <li>técnologias</li>
+            <li>útilizadas</li>
+        </ul>
+        <a target="_blank" href="LINK_DO_PROJETO">LINK_DO_PROJETO</a>
+        <p>Descrição do projeto</p>
     </div>
+</div>
 ```
