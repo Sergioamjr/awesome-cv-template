@@ -54,7 +54,8 @@ Para mostrar a porcentagem corretamente, basta ir no arquivo `css/components/_va
 E logo a baixo no mesmo arquivo, editar a classe do elemento SVG.
 
 ```css
-svg .alguma_tecnologia {
+//Utilize a mesma classe que você definiu no novo elemento.
+svg .*****alguma_tecnologia***** {
 	stroke-dasharray: calc(251px * var(--ALGUMA-TECNOLOGIA-VAR) / 100);
 }
 ```
