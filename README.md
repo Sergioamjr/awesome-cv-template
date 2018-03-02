@@ -1,9 +1,11 @@
 # Portfólio Pessoal
 
-Meu currículo pessoal. Se sinta a vontade para editar e usar. Utilize o arquivo `modelo.html` (https://sergiojrdev.github.io/Personal-CV/modelo.html) para editar suas informações, ele já está limpo e com a estrutura para você editar, mas para você entender, essas são as estruturas das sessões.
+Meu currículo pessoal. Se sinta a vontade para editar e usar. Estou utilizando Gulp, Stylus, Font Awesome.
+
+## Estrutura
+Utilize o arquivo `modelo.html` (https://sergiojrdev.github.io/Personal-CV/modelo.html) para editar suas informações, ele já está limpo e com a estrutura para você editar, mas para você entender, essas são as estruturas das sessões.
 
 ### Educação, Atividades Complementares e Experiência Profissional.
-
 
 ```html
 <div class="simple-box">
