@@ -22,7 +22,8 @@ Estrutura da sessão de Habilidades
 ```
 
 Para mostrar a porcentagem corretamente, basta é no arquivo `css/components/_vars.styl` e editar os valores ou adicionar algum outro.
-```
+
+```css
 :root {
 	--ALGUMA-TECNOLOGIA-VAR: 90;
 }
@@ -30,9 +31,11 @@ Para mostrar a porcentagem corretamente, basta é no arquivo `css/components/_va
 
 E logo a baixo editar a classe do elemento SVG.
 
-```svg .alguma_tecnologia {
+```css
+svg .alguma_tecnologia {
 	stroke-dasharray: calc(251px * var(--ALGUMA-TECNOLOGIA-VAR) / 100);
-}```
+}
+```
 
 
 Estrutura da sessão de Portfólio e Projetos.
