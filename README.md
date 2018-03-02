@@ -22,9 +22,11 @@ Estrutura da sessão de Habilidades
 ```
 
 Para mostrar a porcentagem corretamente, basta é no arquivo `css/components/_vars.styl` e editar os valores ou adicionar algum outro.
-```:root {
+```
+:root {
 	--ALGUMA-TECNOLOGIA-VAR: 90;
-}```
+}
+```
 
 E logo a baixo editar a classe do elemento SVG.
 
