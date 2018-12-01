@@ -1,0 +1,82 @@
+@mixin generateAllSidePadding($values) {
+  @each $value in $values {
+    .p-#{$value} {
+      padding: #{$value}px;
+    }
+  }
+}
+
+@mixin generateAllSideMargin($values) {
+  @each $value in $values {
+    .m-#{$value} {
+      margin: #{$value}px;
+    }
+  }
+}
+
+@mixin generateMargin($local, $values) {
+  @each $value in $values {
+    .m-#{$local}-#{$value} {
+      margin-#{$local}: #{$value}px;
+    }
+  }
+}
+
+@mixin generatePadding($local, $values) {
+  @each $value in $values {
+    .p-#{$local}-#{$value} {
+      padding-#{$local}: #{$value}px;
+    }
+  }
+}
+
+// Gera classes com margens, tipo .m-top-10, .m-left-0, etc
+@include generateAllSideMargin((0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generateMargin("top", (0, 5, 10, 15, 20, 30, 40, 50, 60, 150, 200));
+@include generateMargin("bottom", (0, 5, 10, 15, 20, 30, 40, 50, 60, 100, 150));
+@include generateMargin("left", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generateMargin("right", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+
+// Gera classes com paddings, tipo .m-top-10, .m-left-0, etc
+@include generateAllSidePadding((0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generatePadding("top", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generatePadding("bottom", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generatePadding("left", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+@include generatePadding("right", (0, 5, 10, 15, 20, 30, 40, 50, 60));
+
+@mixin generateFlex($brekpoint) {
+  .#{$brekpoint}-d-flex {
+    display: flex;
+    &-align-center {
+      align-items: center;
+    }
+    &-align-end {
+      align-items: flex-end;
+    }
+    &-centered {
+      justify-content: center;
+      align-items: center;
+    }
+    &-space-between {
+      justify-content: space-between;
+    }
+    &-space-around {
+      justify-content: space-around;
+    }
+    &-space-center {
+      justify-content: center;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
+    &-start {
+      justify-content: flex-start;
+    }
+    &-column {
+      flex-direction: column;
+    }
+    &-row {
+      flex-direction: row;
+    }
+  }
+}

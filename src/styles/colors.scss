@@ -1,0 +1,27 @@
+.background {
+  &-white {
+    background: $white;
+  }
+  &-darken {
+    background: $darken;
+  }
+}
+
+.color {
+  &-darken {
+    color: $darken;
+  }
+  &-white {
+    color: $white;
+  }
+
+  &-lighter {
+    color: $lighter;
+  }
+  &-theme {
+    color: $theme;
+  }
+  &-gray {
+    color: $lightGray_1;
+  }
+}

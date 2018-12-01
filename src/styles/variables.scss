@@ -1,0 +1,30 @@
+$container: 2000px;
+$max-width-container: 900px;
+$max-width-container_1: 750px;
+$xs: 320px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+$max-xs: $xs - 1px;
+$max-sm: $sm - 1px;
+$max-md: $md - 1px;
+$max-lg: $lg - 1px;
+
+$purple: #584ed7;
+$purpleDarken: darken($purple, 20%);
+$purpleLighter: lighten($purple, 20%);
+$pink: #ff006f;
+$pinkDarken: darken($pink, 10%);
+$gray: #5a5b7a;
+$grayDarken: darken($gray, 20%);
+$green: #42ca4d;
+$greenDarken: darken($green, 20%);
+$lightGray: #a4a4a4;
+$lightGray_1: #6d7783;
+$lighter: #e4e4f0;
+$darken: #404040;
+$white: #fff;
+$blueLighter: #f6f5fb;
+$theme: #3481b3;
+$silver: #e3e3e3;

@@ -1,0 +1,63 @@
+.btn {
+  padding: 8px;
+  border: 1px solid $darken;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.5s;
+  position: relative;
+  &-purple,
+  &-bordered-purple {
+    background: $purple;
+    color: $white;
+    border: 1px solid $purple;
+    &:hover {
+      background: $purpleDarken;
+      border: 1px solid $purpleDarken;
+    }
+  }
+  &-bordered-purple {
+    background: $white;
+    color: $purpleDarken;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-pink,
+  &-bordered-pink {
+    background: $pink;
+    color: $white;
+    border: 1px solid $pink;
+    &:hover {
+      background: $pinkDarken;
+      border: 1px solid $pinkDarken;
+    }
+  }
+
+  &-bordered-pink {
+    background: $white;
+    color: $pinkDarken;
+    &:hover {
+      color: $white;
+    }
+  }
+  &-big {
+    padding: 10px 25px;
+    font-size: 1.4rem;
+  }
+}
+
+.nav {
+  &-top-bar {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .main-content-wrapper {
+    max-width: 390px;
+  }
+}

@@ -1,0 +1,96 @@
+.roboto {
+  font-family: "Roboto Slab", serif;
+}
+
+.b {
+  font-weight: bold;
+}
+.p {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  @media screen and (min-width: $sm) {
+    & {
+      &-center-sm {
+        text-align: center;
+      }
+      &-right-sm {
+        text-align: right;
+      }
+      &-left-sm {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.fs {
+  &1 {
+    font-size: 3.5rem;
+  }
+  &2 {
+    font-size: 2.8rem;
+  }
+  &3 {
+    font-size: 2.3rem;
+  }
+  &4 {
+    font-size: 2rem;
+  }
+  &5 {
+    font-size: 1.8rem;
+  }
+  &6 {
+    font-size: 1.5rem;
+  }
+  &7 {
+    font-size: 1.3rem;
+  }
+  &8 {
+    font-size: 1.1rem;
+  }
+  &9 {
+    font-size: 0.9rem;
+  }
+  &10 {
+    font-size: 0.8rem;
+  }
+}
+
+.fw {
+  &400 {
+    font-weight: 400;
+  }
+
+  &600 {
+    font-weight: 600;
+  }
+
+  &700 {
+    font-weight: 700;
+  }
+
+  &bold {
+    font-weight: bold;
+  }
+
+  &lighter {
+    font-weight: lighter;
+  }
+
+  &normal {
+    font-weight: normal;
+  }
+}
+
+.text {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}

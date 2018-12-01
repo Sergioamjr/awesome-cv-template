@@ -1,0 +1,25 @@
+{
+  "name": "resume-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "./node_modules/.bin/babel src --out-dir lib",
+    "css": "node_modules/.bin/sass src/styles/style.scss src/style.css --style compressed",
+    "css-watch": "node_modules/.bin/sass src/styles/style.scss src/style.css --watch --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "sass": "^1.15.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
+  }
+}

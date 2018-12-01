@@ -1,0 +1,104 @@
+@mixin createGrid($breakpoint, $until) {
+  @for $value from 1 through $until {
+    .#{$breakpoint}-#{$value}-#{$until} {
+      padding: 0 15px;
+      width: ((0% + $value / $until * 100));
+    }
+  }
+}
+
+@media screen and (min-width: $xs) {
+  @include generateFlex("xs");
+  .grid {
+    @include createGrid("xs", 12);
+  }
+}
+
+@media screen and (min-width: $sm) {
+  @include generateFlex("sm");
+  .grid {
+    @include createGrid("sm", 12);
+  }
+}
+
+@media screen and (min-width: $md) {
+  @include generateFlex("md");
+  .grid {
+    @include createGrid("md", 12);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  @include generateFlex("lg");
+  .grid {
+    @include createGrid("lg", 12);
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  & > div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.d-flex {
+  display: flex;
+  &-align-center {
+    align-items: center;
+  }
+  &-align-end {
+    align-items: flex-end;
+  }
+  &-centered {
+    justify-content: center;
+    align-items: center;
+  }
+  &-space-between {
+    justify-content: space-between;
+  }
+  &-space-around {
+    justify-content: space-around;
+  }
+  &-space-center {
+    justify-content: center;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-column {
+    flex-direction: column;
+  }
+  &-row {
+    flex-direction: row;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.flex {
+  &-1 {
+    flex: 1;
+  }
+  &-2 {
+    flex: 2;
+  }
+  &-3 {
+    flex: 3;
+  }
+  &-4 {
+    flex: 4;
+  }
+}

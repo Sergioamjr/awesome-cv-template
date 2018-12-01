@@ -1,0 +1,52 @@
+@media screen and (max-width: $max-sm) {
+  .sidebar {
+    width: 100%;
+    max-width: 320px;
+  }
+  .full-width-sm {
+    width: 100vw;
+    position: absolute;
+    right: 0;
+  }
+  .mobile-menu {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-320px);
+    transition: transform 0.4s ease;
+    &-actived {
+      transform: translateX(0px);
+    }
+  }
+}
+
+.active-menu-btn-left,
+.active-menu-btn-right {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background: $purple;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 50% 50% 0;
+  border: 0;
+  color: #fff;
+}
+
+.active-menu-btn-left {
+  right: 0;
+  border-radius: 50% 0 0 50%;
+}
+
+.disabled-menu-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: $sm) {
+  .hide-sm {
+    display: none;
+  }
+  .show-sm {
+    display: block;
+  }
+}
