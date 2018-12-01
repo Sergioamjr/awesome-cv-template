@@ -4,14 +4,14 @@
   "description": "Em Construção",
   "main": "index.js",
   "scripts": {
+    "css": "node_modules/.bin/stylus css/style.styl -o dist/css/style.css",
+    "css-watch": "node_modules/.bin/stylus -w css/style.styl -o dist/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sergiojunior",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-stylus": "^2.6.0"
+    "stylus": "^0.54.5"
   },
   "dependencies": {},
   "repository": {
