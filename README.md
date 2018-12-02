@@ -25,12 +25,12 @@ Esse projeto utiliza apenas HTML, CSS e JS puro. Para alterar o conteúdo, use o
 
 ### Roadmap
 
-Algumas funcionalidades que gostaria de implementar estão aqui. Sinta-se a vontade para sugerir outras a partir de uma issue ou me ajudar a implementa-las.
+Algumas funcionalidades que gostaria de implementar estão [aqui](https://github.com/SergioJrDev/awesome-cv-template/projects/1). Sinta-se a vontade para sugerir outras a partir de uma [issue](https://github.com/SergioJrDev/awesome-cv-template/issues) ou me ajudar a implementa-las.
 
 ### Contribuicão
 
 Caso você queira sugerir ou mudar qualquer coisa, siga os seguintes passos:
 
-1 - Abra uma issue descrevendo sua alteracão ou melhoria.
+1 - Abra uma [issue](https://github.com/SergioJrDev/awesome-cv-template/issues) descrevendo sua alteracão ou melhoria.
 
 2 - Crie um fork desse projeto, faca suas alteracões e abra um pull request.
