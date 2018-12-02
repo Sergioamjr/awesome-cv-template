@@ -17,6 +17,10 @@
       transform: translateX(0px);
     }
   }
+
+  .border-bottom-sm {
+    border-bottom: 1px solid $silver;
+  }
 }
 
 .active-menu-btn-left,
@@ -50,5 +54,9 @@
   }
   .show-sm {
     display: block;
+  }
+
+  .no-p-bottom {
+    padding-bottom: 0;
   }
 }
