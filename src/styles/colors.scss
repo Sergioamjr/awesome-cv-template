@@ -4,6 +4,9 @@
   }
   &-darken {
     background: $darken;
+    &-opacity {
+      background: $darkenOpacity;
+    }
   }
 }
 
@@ -22,6 +25,6 @@
     color: $theme;
   }
   &-gray {
-    color: $lightGray_1;
+    color: $lightGray;
   }
 }

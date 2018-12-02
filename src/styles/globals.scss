@@ -16,37 +16,15 @@ a {
   text-decoration: underline;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-.main-container {
+.main-container,
+.container {
   max-width: $container;
   margin: 0 auto;
   position: relative;
 }
 
 .container {
-  max-width: $container;
   padding: 0 15px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.overflow-x {
-  overflow-x: auto;
-}
-
-.z-1 {
-  z-index: 1;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.h-100 {
-  height: 100%;
 }
 
 .d {
